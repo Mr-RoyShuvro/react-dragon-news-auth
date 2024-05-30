@@ -45,15 +45,15 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar pr-2">
                     <div className="w-10 rounded-full">
                         <img alt="Tailwind CSS Navbar component" src={userDefaultPic} />
                     </div>
                 </div>
                 {
-                    user ? <button onClick={handleSignOut} className="btn">Sign Out</button> :
+                    user ? <button onClick={handleSignOut} className="btn btn-error text-white px-8">Sign Out</button> :
                         <Link to="/login">
-                            <button className="btn">Login</button>
+                            <button className="btn btn-success text-white px-8 ">Login</button>
                         </Link>
                 }
 
